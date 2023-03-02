@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <title>Add data</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Form nhập dữ liệu -->
+            <form class="mx-auto" style="width: 60%; margin-top: 20px;">
+                <div class="form-group">
+                    <label
+                        for="dateTime">Date Time</label>
+                    <input type="datetime-local" class="form-control"
+                        id="dateTime"
+                        placeholder="Enter date and time">
+                </div>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title"
+                        placeholder="Enter title">
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" class="form-control" id="location"
+                        placeholder="Enter location">
+                </div>
+                <div class="form-group">
+                    <label class="text-right" for="imgUrl">Image URL</label>
+                    <input type="file" class="form-control" id="imgUrl"
+                        placeholder="Enter image URL">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea class="form-control" id="description" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+            </form>
+        </div>
+        <button type="submit" class="btn btn-primary" id="btnShow">Show</button>
+        <div class="show-img">
+
+        </div>
+        <!-- Import các file JavaScript của Bootstrap và jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script type="module" src="firebase/firebase.js"></script>
+        <script type="module" src="form.js"></script>
+    </body>
+</html>
