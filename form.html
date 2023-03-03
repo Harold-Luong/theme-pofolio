@@ -41,16 +41,36 @@
                 </div>
                 <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
             </form>
-        </div>
-        <button type="submit" class="btn btn-primary" id="btnShow">Show</button>
-        <div class="show-img">
+            <div class="show-table">
 
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Date Time</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Image URL</th>
+                            <th scope="col">Update</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                </table>
+
+
+            </div>
         </div>
+
+
         <!-- Import các file JavaScript của Bootstrap và jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script
             src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script type="module" src="firebase/firebase.js"></script>
+
         <script type="module" src="form.js"></script>
     </body>
 </html>
